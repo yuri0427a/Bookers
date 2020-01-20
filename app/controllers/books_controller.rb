@@ -9,8 +9,12 @@ class BooksController < ApplicationController
         # トップ画面へリダイレクト
         redirect_to ''
     end
+
+    def show
+        @book = Book.find(params[:id])
+    end
     private
-   
+     
     def book_params
         params.require(:book).permit(:title, :body)
     end
