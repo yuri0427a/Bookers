@@ -1,3 +1,22 @@
+<h1>Books</h1>
+<table>
+	<tr>
+		<th>Title</th>
+		<th>Body</th>
+		<th></th>
+   </tr>
+	<% @books.each do |book| %>
+	<tr>
+		<td><%= @book.title %></td>
+		<td><%= @book.body %></td>
+		<td>
+			<a href="#">Show</a>
+			<a href="#">Edit</a>
+			<a href="#">Destroy</a>
+		</td>
+	</tr>
+<% end %>
+</table>
 <h2>New Book</h2>
 <%= form_for(@book) do |f|%>
 

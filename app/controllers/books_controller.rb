@@ -11,13 +11,14 @@ class BooksController < ApplicationController
    def create
          book = Book.new(book_params)
          book.save
-        # トップ画面へリダイレクト
-        redirect_to books_path
+        redirect_to  book_path(book.id)
     end
 
     def show
         @book = Book.find(params[:id])
     end
+
+
     private
      
     def book_params

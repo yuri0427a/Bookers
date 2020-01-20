@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   post 'books' =>'books#create'
 
   post 'books/:id' => 'books#show'
-
-
+  
+  get 'books' => 'books#index'
 
 end
