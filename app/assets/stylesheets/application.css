@@ -58,6 +58,10 @@ table{
 }
 
 th{ 
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
 	height: 24px;
 	padding: 1px 1px 5px 1px;
 }

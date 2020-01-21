@@ -11,6 +11,11 @@ Rails.application.routes.draw do
   
   get 'books' => 'books#index'
 
+  get 'books/:id/edit/' => 'books#edit'
+
+  patch 'books/:id/update' => 'books#update'
+
   delete 'books/:id' => 'books#destroy'
+
 
 end
