@@ -10,7 +10,9 @@
 </div>
 <div class="action">
   <%= f.submit "Update Book" %>
-  <%= link_to "Show", book_path(@book.id) %> 
-  <%= link_to "Back", books_path %> 
-</div>
+  </div>
+  <a><%= link_to "Show", book_path(@book.id) %></a>
+   |
+  <a><%= link_to "Back", books_path %></a>
+
 <% end %>
