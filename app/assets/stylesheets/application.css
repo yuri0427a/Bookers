@@ -86,6 +86,14 @@ label{
 .field{
 	margin: 0 0 10px 0;
 }
+
+/*show.html.erb*/
+
+#notice{
+	color: #008000;
+}
+
+
 .action{
   margin: 0 0 10px 0;
 }
