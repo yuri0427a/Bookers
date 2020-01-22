@@ -131,12 +131,11 @@ label{
 /*show.html.erb*/
 
 
-
 #notice{
 	color: #008000;
 }
 
-
+/*投稿、更新ボタン*/
 .action{
   margin: 0 0 10px 0;
 }
